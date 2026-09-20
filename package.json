@@ -1,0 +1,22 @@
+{
+  "name": "medication-custody-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "课后托管用药保管与执行记录服务（Fastify + SQLite / node:sqlite）",
+  "scripts": {
+    "dev": "NODE_OPTIONS='--disable-warning=ExperimentalWarning' tsx watch src/server.ts",
+    "start": "NODE_OPTIONS='--disable-warning=ExperimentalWarning' tsx src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "NODE_OPTIONS='--disable-warning=ExperimentalWarning' vitest run"
+  },
+  "dependencies": {
+    "fastify": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^3.0.5"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "afterschool-med-service",
+  "version": "1.0.0",
+  "description": "课后托管学生用药保管与执行记录服务",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "node --experimental-sqlite --import tsx watch src/server.ts",
+    "start": "node --experimental-sqlite --import tsx src/server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-sqlite --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "fastify": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
